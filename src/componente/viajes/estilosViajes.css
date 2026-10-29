@@ -1,0 +1,204 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+    flex-direction: column;
+  }
+    
+    .formularioV {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px; /* Asumiendo que tu menú lateral tiene un ancho de 200px */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
+    flex-grow: 1; /* Asegura que ocupe todo el espacio disponible */
+    }
+    
+    /* Estilos para el título */
+    .titulo {
+      background: linear-gradient(to right, #1d3c6a, #244e78, #2a5a86, #316d95);
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    .subtitulo {
+      background: linear-gradient(to right, #1d3c6a, #244e78, #2a5a86, #316d95);
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+    }
+    
+    form {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      width: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow-y: auto; /* Permite desplazamiento dentro del formulario */
+      max-height: 70vh; 
+    }
+    
+    /* Estilos de los campos del formulario */
+    label {
+      font-weight: bold;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #005f80;
+    }
+    
+    /* Estilos para productos */
+    .producto {
+      margin-bottom: 15px;
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    
+    /* Botón de agregar producto */
+    button[type="button"] {
+      background-color: #2a5a86;
+    }
+    
+    button[type="button"]:hover {
+      background-color: #2a5a86;
+    }
+    /* Contenedor principal para la ventana */
+  .ventana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el título */
+  .titulo {
+    background: linear-gradient(to right, #1d3c6a, #244e78, #2a5a86, #316d95);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Contenedor para las listas */
+  .contenedor-listas {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para cada lista */
+  .lista {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 45%; /* Ajusta el tamaño de cada lista */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px;
+  }
+  
+  .lista h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #1d3c6a;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Agregar espacio entre las dos listas */
+  .lista + .lista {
+    margin-left: 20px;
+  }
+  
+  .from-facturas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    overflow-y: auto; 
+    height: 415px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005f80;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 70px;
+  }

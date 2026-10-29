@@ -1,0 +1,211 @@
+.contenedor-principal {
+  display: flex;
+  height: 100vh; 
+  width: 100vw; 
+  overflow: hidden; 
+}
+
+.menu-lateral {
+  width: 256px;
+  background-color: #001529;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;  
+  overflow: hidden;
+}
+
+.menu-lateral.collapsed {
+  width: 80px;
+}
+
+.menu-lateral.collapsed + .contenido-principal {
+  width: calc(100% - 80px);
+}
+
+.menu-superior {
+  width: 100%;
+  height: 60px;
+  background-color: #001529;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+.logo-texto {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.texto {
+  color: white;
+  font-size: 16px;
+}
+
+.cerrar-sesión {
+  display: flex;
+  align-items: center;
+}
+
+.cerrar-sesión .ant-btn {
+  background-color: #001529; 
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.cerrar-sesión .ant-btn:hover {
+  background-color: #d9363e; 
+}
+
+.contenido-principal {
+  padding: 24px;
+  margin: 0;
+  min-height: 280px;
+  background: rgb(252, 251, 251);
+  border-radius: 8px;
+  transition: width 0.5s ease-in-out;
+}
+
+.flecha-menu{
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  color: #001529;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.10s ease-in-out, background-color 0.10s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.menu-lateral.collapsed + .flecha-menu {
+  left: 80px;
+}
+
+.redes-sociales .anticon {
+  font-size: 1.5em;
+  color: white;
+  margin-left: 10px; 
+}
+
+.cerrar-sesión {
+  display: flex;
+  align-items: center;
+}
+
+.cerrar-sesión .redes-sociales {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.cerrar-sesión .redes-sociales .anticon {
+  font-size: 1.2em; 
+  color: white;
+  margin-right: 10px; 
+}
+
+.cerrar-sesión .anticon-poweroff {
+  font-size: 1.2em; 
+}
+
+.saludo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.saludo h1 {
+  font-size: 2.5rem;
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.saludo p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.grafico-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.grafico {
+  width: 140px;
+}
+
+.grafico-texto {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.grafico-positivo {
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.grafico-negativo {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.ant-row {
+  display: flex;
+  align-items: stretch; /* Asegura que las columnas tengan la misma altura */
+}
+
+.ant-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Asegura que las tarjetas ocupen toda la altura */
+}
+
+.tarjeta-clientes,
+.tarjeta-reservas,
+.tarjeta-facturacion {
+  min-height: 400px; /* Altura mínima uniforme */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espaciado uniforme entre los elementos */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+}
+
+.tarjeta-clientes p,
+.tarjeta-reservas p,
+.tarjeta-facturacion p {
+  margin: 0; /* Elimina márgenes adicionales */
+  text-align: center; /* Centra el texto */
+}
+
+.tarjeta-clientes .ant-statistic,
+.tarjeta-reservas .ant-statistic,
+.tarjeta-facturacion .ant-statistic {
+  margin-bottom: 10px; /* Espaciado entre estadísticas */
+}
+
+.tarjeta-clientes .grafico,
+.tarjeta-reservas .grafico,
+.tarjeta-facturacion .grafico {
+  margin-top: 10px; /* Espaciado superior para el gráfico */
+}

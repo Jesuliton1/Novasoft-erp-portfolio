@@ -1,0 +1,56 @@
+{
+  "name": "novasoft-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "node backend/servidor.js",
+    "test": "node --test backend/tests/*.test.js tests/*.test.js",
+    "test:auth": "node --test backend/tests/*.test.js",
+    "qa:auth": "node tests/autenticacion.e2e.cjs",
+    "qa:demo": "node tests/demo-publica.e2e.cjs"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@tailwindcss/vite": "^4.0.9",
+    "antd": "^5.24.6",
+    "axios": "^1.8.3",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^3.0.1",
+    "mysql2": "^3.12.0",
+    "prop-types": "15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.5.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9",
+    "vite": "^6.2.0"
+  },
+  "description": "ERP académico para agencias de viajes con demo local y datos ficticios",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
